@@ -102,10 +102,10 @@
     [view setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self setPaperFoldState:PaperFoldStateDefault];
     
-    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(-1,0,1,self.frame.size.height)];
-    [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
-    [self.contentView addSubview:line];
-    [line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
+    //UIView *line = [[UIView alloc] initWithFrame:CGRectMake(-1,0,1,self.frame.size.height)];
+    //[line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
+    //[self.contentView addSubview:line];
+    //[line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
 }
 
 - (void)setBottomFoldContentView:(UIView*)view
@@ -137,11 +137,11 @@
     [view setAutoresizingMask:UIViewAutoresizingFlexibleHeight|UIViewAutoresizingFlexibleWidth];
     [self setPaperFoldState:PaperFoldStateDefault];
     
-    UIView *line = [[UIView alloc] initWithFrame:CGRectMake(self.contentView.frame.size.width,0,1,self.frame.size.height)];
-    [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
-    [self.contentView addSubview:line];
-    [line setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleHeight];
-    [line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
+    //UIView *line = [[UIView alloc] initWithFrame:CGRectMake(self.contentView.frame.size.width,0,1,self.frame.size.height)];
+    //[line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
+    //[self.contentView addSubview:line];
+    //[line setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleHeight];
+    //[line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
 }
 
 // this method is deprecated
