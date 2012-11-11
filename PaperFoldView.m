@@ -714,9 +714,10 @@
                 [self.delegate paperFoldView:self didFoldAutomatically:YES toState:PaperFoldStateRightUnfolded];
             }
         }
+        // yestoall fix BEGIN
         else if (state==PaperFoldStateTopUnfolded)
         {
-            [self.topFoldView setHidden:NO]
+            [self.topFoldView setHidden:NO];
 
             CGAffineTransform transform = CGAffineTransformMakeTranslation(0,self.topFoldView.frame.size.height);
             [self.contentView setTransform:transform];
@@ -730,7 +731,7 @@
         }
         else if (state==PaperFoldStateBottomUnfolded)
         {
-            [self.bottomFoldView setHidden:NO]
+            [self.bottomFoldView setHidden:NO];
 
             CGAffineTransform transform = CGAffineTransformMakeTranslation(0,-self.bottomFoldView.frame.size.height);
             [self.contentView setTransform:transform];
@@ -742,6 +743,7 @@
             }
 
         }
+        // yestoall fix END
         self.state = state;
     }
 }
@@ -776,6 +778,7 @@
     [self setPaperFoldState:PaperFoldStateLeftUnfolded];
 }
 
+// yestoall fix BEGIN
 - (void)unfoldTopView
 {
     [self setPaperFoldState:PaperFoldStateTopUnfolded];
@@ -785,6 +788,7 @@
 {
     [self setPaperFoldState:PaperFoldStateBottomUnfolded];
 }
+// yestoall fix END
 
 - (void)unfoldRightView
 {
