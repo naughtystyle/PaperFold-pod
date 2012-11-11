@@ -715,34 +715,34 @@
             }
         }
         // yestoall fix BEGIN
-        else if (state==PaperFoldStateTopUnfolded)
-        {
-            [self.topFoldView setHidden:NO];
+        // else if (state==PaperFoldStateTopUnfolded)
+        // {
+        //     [self.topFoldView setHidden:NO];
 
-            CGAffineTransform transform = CGAffineTransformMakeTranslation(0,self.topFoldView.frame.size.height);
-            [self.contentView setTransform:transform];
-            [self.topFoldView unfoldWithoutAnimation];
+        //     CGAffineTransform transform = CGAffineTransformMakeTranslation(0,self.topFoldView.frame.size.height);
+        //     [self.contentView setTransform:transform];
+        //     [self.topFoldView unfoldWithoutAnimation];
             
-            if (self.lastState!=PaperFoldStateTopUnfolded && [self.delegate respondsToSelector:@selector(paperFoldView:didFoldAutomatically:toState:)])
-            {
-                [self.delegate paperFoldView:self didFoldAutomatically:YES toState:PaperFoldStateTopUnfolded];
-            }
+        //     if (self.lastState!=PaperFoldStateTopUnfolded && [self.delegate respondsToSelector:@selector(paperFoldView:didFoldAutomatically:toState:)])
+        //     {
+        //         [self.delegate paperFoldView:self didFoldAutomatically:YES toState:PaperFoldStateTopUnfolded];
+        //     }
 
-        }
-        else if (state==PaperFoldStateBottomUnfolded)
-        {
-            [self.bottomFoldView setHidden:NO];
+        // }
+        // else if (state==PaperFoldStateBottomUnfolded)
+        // {
+        //     [self.bottomFoldView setHidden:NO];
 
-            CGAffineTransform transform = CGAffineTransformMakeTranslation(0,-self.bottomFoldView.frame.size.height);
-            [self.contentView setTransform:transform];
-            [self.bottomFoldView unfoldWithoutAnimation];
+        //     CGAffineTransform transform = CGAffineTransformMakeTranslation(0,-self.bottomFoldView.frame.size.height);
+        //     [self.contentView setTransform:transform];
+        //     [self.bottomFoldView unfoldWithoutAnimation];
             
-            if (self.lastState!=PaperFoldStateBottomUnfolded && [self.delegate respondsToSelector:@selector(paperFoldView:didFoldAutomatically:toState:)])
-            {
-                [self.delegate paperFoldView:self didFoldAutomatically:YES toState:PaperFoldStateBottomUnfolded];
-            }
+        //     if (self.lastState!=PaperFoldStateBottomUnfolded && [self.delegate respondsToSelector:@selector(paperFoldView:didFoldAutomatically:toState:)])
+        //     {
+        //         [self.delegate paperFoldView:self didFoldAutomatically:YES toState:PaperFoldStateBottomUnfolded];
+        //     }
 
-        }
+        // }
         // yestoall fix END
         self.state = state;
     }
