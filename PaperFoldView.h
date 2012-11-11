@@ -107,6 +107,8 @@
 // use setPaperFoldState: instead
 - (void)unfoldLeftView __attribute__((deprecated));
 - (void)unfoldRightView __attribute__((deprecated));
+- (void)unfoldTopView __attribute__((deprecated));
+- (void)unfoldBottomView __attribute__((deprecated));
 - (void)restoreToCenter __attribute__((deprecated));
 // set fold views
 - (void)setLeftFoldContentView:(UIView*)view __attribute__((deprecated));

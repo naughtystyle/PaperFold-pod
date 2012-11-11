@@ -748,6 +748,16 @@
     [self setPaperFoldState:PaperFoldStateLeftUnfolded];
 }
 
+- (void)unfoldTopView
+{
+    [self setPaperFoldState:PaperFoldStateTopUnfolded];
+}
+
+- (void)unfoldBottomView
+{
+    [self setPaperFoldState:PaperFoldStateBottomUnfolded];
+}
+
 - (void)unfoldRightView
 {
     [self setPaperFoldState:PaperFoldStateRightUnfolded];
