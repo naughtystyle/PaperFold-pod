@@ -121,7 +121,7 @@
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(-1,0,1,self.frame.size.height)];
     [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self.contentView addSubview:line];
-    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
     line.alpha = 0;
 	self.leftDividerLine = line;
     
@@ -142,7 +142,7 @@
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0,self.frame.size.height,self.frame.size.width,1)];
     [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self.contentView addSubview:line];
-    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
 	line.alpha = 0;
 	self.bottomDividerLine = line;
     
@@ -163,7 +163,7 @@
     [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self.contentView addSubview:line];
     [line setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleHeight];
-    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
 	line.alpha = 0;
 	self.rightDividerLine = line;
     
@@ -190,7 +190,7 @@
     [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self.contentView addSubview:line];
     [line setAutoresizingMask:UIViewAutoresizingFlexibleLeftMargin|UIViewAutoresizingFlexibleHeight];
-    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0.3]];
+    [line setBackgroundColor:[UIColor colorWithWhite:0 alpha:0]];
 	line.alpha = 0;
 	self.topDividerLine = line;
     
