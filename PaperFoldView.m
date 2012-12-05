@@ -121,8 +121,10 @@
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(-1,0,1,self.frame.size.height)];
     [line setAutoresizingMask:UIViewAutoresizingFlexibleHeight];
     [self.contentView addSubview:line];
-    [line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
-	line.alpha = 0;
+
+    //[line setBackgroundColor:[UIColor colorWithWhite:0.9 alpha:0.5]];
+	[line setBackgroundColor:[UIColor colorWithRed:1 green:0 blue:0 alpha:1]];
+    line.alpha = 0;
 	self.leftDividerLine = line;
     
     self.enableLeftFoldDragging = YES;
